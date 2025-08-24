@@ -17,4 +17,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #pragma once
 
-#define RGBLIGHT_DEFAULT_MODE (RGBLIGHT_MODE_RAINBOW_SWIRL + 2)
+#define MASTER_RIGHT
+
+#define RGBLIGHT_SPLIT
+#define RGBLIGHT_SLEEP
+
+#define TAPPING_TERM 200
+#define PERMISSIVE_HOLD
+#define BOTH_SHIFTS_TURNS_ON_CAPS_WORD
