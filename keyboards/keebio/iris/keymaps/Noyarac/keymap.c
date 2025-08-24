@@ -1,6 +1,8 @@
 #include QMK_KEYBOARD_H
 #include "keymap_french.h"
 
+// :%%
+
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
     [0] = LAYOUT(
@@ -26,7 +28,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 //                                                                                         |
         KC_NUM, KC_PSCR,      FR_SUP2,      FR_DEG,       FR_DLR,      FR_HASH, KC_TRNS,    KC_TRNS, KC_P0, KC_P1,      KC_P2,        KC_P3,        KC_TRNS,      KC_APP,
 //                                                                                         |
-                                                          KC_TRNS,      MO(1),   KC_TRNS,    KC_TRNS, MO(1),  KC_TRNS
+                                                          KC_TRNS,      MO(2),   KC_TRNS,    KC_TRNS, KC_TRNS,  KC_TRNS
+        ),
+        [2] = LAYOUT(
+//                                                                                         |
+        KC_TRNS,  KC_TRNS,        KC_TRNS,        KC_TRNS,        KC_TRNS,        KC_TRNS,                       KC_TRNS,   KC_TRNS,        KC_TRNS,        KC_TRNS,       KC_TRNS,       KC_TRNS,
+//                                                                                         |
+        KC_TRNS, KC_TRNS,     KC_TRNS,      KC_TRNS,        KC_TRNS,       KC_TRNS,                     MS_WHLU, MS_BTN1,        MS_UP,        MS_BTN2,        KC_TRNS,      KC_TRNS,
+//                                                                                         |
+        KC_TRNS, LSFT_T(KC_TRNS), LCTL_T(KC_TRNS), LALT_T(KC_TRNS), LGUI_T(KC_TRNS), KC_TRNS,       MS_WHLD, MS_LEFT, MS_DOWN, MS_RGHT, RSFT_T(KC_TRNS), KC_TRNS,
+//                                                                                         |
+        KC_TRNS, KC_TRNS,      KC_TRNS,      KC_TRNS,       KC_TRNS,      KC_TRNS, KC_TRNS,    KC_TRNS, KC_TRNS, MS_WHLL,      MS_WHLR,        KC_TRNS,        KC_TRNS,      KC_TRNS,
+//                                                                                         |
+                                                          KC_TRNS,      KC_TRNS,   KC_TRNS,    KC_TRNS, QK_LLCK,  KC_TRNS
         )
 };
 
